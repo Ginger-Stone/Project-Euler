@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiples of 3 and 5</title>
+
+    <script src="./script.js"></script>
+    <style>
+      .visibility {
+        visibility: hidden;
+        display: none;
+      }
+
+      #output {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Multiples of 3 and 5</h1>
+
+    <p>
+      If we list all the natural numbers below 10 that are multiples of 3 or 5,
+      we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of
+      all the multiples of 3 or 5 below the provided parameter value number.
+    </p>
+
+    <input type="number" name="" id="number" />
+    <button
+      type="submit"
+      onclick="multiples3And5(document.getElementById('number'))"
+    >
+      Submit
+    </button>
+    <p id="output-container" class="visibility">
+      The sum of all multiples of three and five below
+      <span id="input"></span> is
+      <span id="output"></span>
+    </p>
+  </body>
+</html>
