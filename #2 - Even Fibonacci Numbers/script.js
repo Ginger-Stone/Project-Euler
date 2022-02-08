@@ -20,7 +20,7 @@ function fiboEvenSum(n) {
   return sum;
 }
 
-fiboEvenSum(10);
+fiboEvenSum(4000000);
 
 function output(input, sum) {
   document.getElementById("input").innerHTML = input;

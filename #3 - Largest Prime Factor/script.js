@@ -51,3 +51,6 @@ function checkLastIfPrime(primeNumbers) {
   console.log(primeNumbers);
   return lastValue;
 }
+
+
+largestPrimeFactor(600851475143);
