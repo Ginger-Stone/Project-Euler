@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1644284652 source:c:\users\admin\documents\_workfolder\project euler\#10 - summation of primes\main.cpp
+	<iostream>
+	<math.h>
+

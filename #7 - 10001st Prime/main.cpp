@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -17,8 +18,31 @@ bool isPrime(int n){
         return false;
     }
 
-    //Deeper filter
+    //Deeper filter - divide by all numbers below it to ensure its a prime number
     for(int i=2; i<n; i++){
+        if(n%i==0){
+            return false;
+        }
+    }
+
+    return true;
+}
+
+bool isPrimeFast(int n){
+    //First filter
+    if(n%2==0 && n!=2){
+        return false;
+    }
+    if(n%3==0 && n!=3){
+        return false;
+    }
+
+    /*
+    The consequence for primality testing of a number n is: if we cannot find a number f less than
+    or equal n that divides n then n is prime: the only primefactor of n is n itself
+    */
+    //Deeper filter
+    for(int i=2; i<=sqrt(n); i++){
         if(n%i==0){
             return false;
         }
@@ -31,7 +55,7 @@ int nthPrimeNumber(int n){
     int i=1, j=1;
     while(i<=n){
         j++;
-        if(isPrime(j)==true){
+        if(isPrimeFast(j)==true){
             i++;
         };
     }
