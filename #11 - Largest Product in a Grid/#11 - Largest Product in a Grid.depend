@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1644461004 source:c:\users\admin\documents\_workfolder\c programming\#11 - largest product in a grid\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1645063572 source:c:\users\admin\documents\_workfolder\project euler\#11 - largest product in a grid\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+
