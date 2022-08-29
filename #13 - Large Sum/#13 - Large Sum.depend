@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1661742132 source:c:\users\admin\documents\_workfolder\project euler\#13 - large sum\main.cpp
+	<iostream>
+	<vector>
+	<string>
+
